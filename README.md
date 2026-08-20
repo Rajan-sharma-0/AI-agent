@@ -58,62 +58,7 @@ This project uses:
 
 ### System diagram
 
-```svg
-<svg width="820" height="340" viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Agent workflow diagram">
-  <defs>
-    <linearGradient id="bg" x1="0" x2="1">
-      <stop offset="0%" stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#eef2ff"/>
-    </linearGradient>
-    <style>
-      .box { fill: #ffffff; stroke: #3b82f6; stroke-width: 2; rx: 16; }
-      .tool { fill: #ecfeff; stroke: #14b8a6; stroke-width: 2; rx: 14; }
-      .api { fill: #fef3c7; stroke: #f59e0b; stroke-width: 2; rx: 14; }
-      .text { font: 16px Arial, sans-serif; fill: #111827; }
-      .small { font: 14px Arial, sans-serif; fill: #374151; }
-      .arrow { stroke: #475569; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
-    </style>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
-    </marker>
-  </defs>
 
-  <rect x="0" y="0" width="820" height="340" fill="url(#bg)"/>
-
-  <rect class="box" x="40" y="120" width="130" height="80"/>
-  <text class="text" x="105" y="155" text-anchor="middle">User</text>
-  <text class="small" x="105" y="176" text-anchor="middle">Question</text>
-
-  <rect class="box" x="220" y="120" width="150" height="80"/>
-  <text class="text" x="295" y="155" text-anchor="middle">AI Agent</text>
-  <text class="small" x="295" y="176" text-anchor="middle">LLM + logic</text>
-
-  <rect class="tool" x="430" y="60" width="150" height="70"/>
-  <text class="text" x="505" y="92" text-anchor="middle">Weather Tool</text>
-  <text class="small" x="505" y="110" text-anchor="middle">OpenWeather API</text>
-
-  <rect class="tool" x="430" y="180" width="150" height="70"/>
-  <text class="text" x="505" y="212" text-anchor="middle">News Tool</text>
-  <text class="small" x="505" y="230" text-anchor="middle">Tavily Search</text>
-
-  <rect class="api" x="640" y="120" width="150" height="80"/>
-  <text class="text" x="715" y="155" text-anchor="middle">External Data</text>
-  <text class="small" x="715" y="176" text-anchor="middle">Live APIs</text>
-
-  <path class="arrow" d="M170 160 H220"/>
-  <path class="arrow" d="M370 160 H430"/>
-  <path class="arrow" d="M580 95 H640"/>
-  <path class="arrow" d="M580 215 H640"/>
-  <path class="arrow" d="M640 185 Q595 160 580 160"/>
-  <path class="arrow" d="M640 170 Q590 160 580 160"/>
-
-  <text class="small" x="189" y="145">message</text>
-  <text class="small" x="395" y="145">decide</text>
-  <text class="small" x="600" y="88">fetch</text>
-  <text class="small" x="599" y="208">search</text>
-  <text class="small" x="582" y="164">results</text>
-</svg>
-```
 
 ### Flowchart
 
