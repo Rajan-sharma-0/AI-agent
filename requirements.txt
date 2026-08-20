@@ -1,0 +1,9 @@
+requests
+python-dotenv
+rich
+langchain
+langchain-ollama
+langchain-openai
+langchain-mistralai
+langgraph
+tavily-python
